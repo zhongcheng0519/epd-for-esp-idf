@@ -1,0 +1,44 @@
+menu "Example Configuration"
+
+    config EPD_BUSY
+        int "EPD BUSY"
+        range 0 34
+        default 1
+        help
+            GPIO number (IOxx) to EPD BUSY.
+
+    config EPD_RES
+        int "EPD RES"
+        range 0 34
+        default 2
+        help
+            GPIO number (IOxx) to EPD RES.
+
+    config EPD_DC
+        int "EPD D/C"
+        range 0 34
+        default 3
+        help
+            GPIO number (IOxx) to EPD D/C.
+
+    config EPD_CS
+        int "EPD CS"
+        range 0 34
+        default 4
+        help
+            GPIO number (IOxx) to EPD CS.
+    
+    config EPD_SCK
+        int "EPD SCK"
+        range 0 34
+        default 5
+        help
+            GPIO number (IOxx) to EPD SCK.
+
+    config EPD_SDI
+        int "EPD SDI"
+        range 0 34
+        default 6
+        help
+            GPIO number (IOxx) to EPD SDI.
+endmenu
